@@ -1,0 +1,4 @@
+#!/bin/bash
+<% @env_hash.each_pair do | var_name, var_value | %>
+<%= "export #{var_name}=#{var_value}" %>
+<% end %>
