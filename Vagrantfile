@@ -119,6 +119,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.add_recipe "firewall"
     end
 
+    chef.add_recipe "git"
+    chef.add_recipe "htop"
+    
     chef.add_recipe "docker"
     chef.add_recipe "docker::compose"
     chef.add_recipe "docker::machine"
